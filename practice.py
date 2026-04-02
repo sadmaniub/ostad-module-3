@@ -35,7 +35,7 @@ my_function("John", "Doe", 30)
 
 my_function(f_name="John", l_name="Doe", age=30) # when we use keyword arguments, we can specify the values for the parameters by their names, which allows us to pass the arguments in any order. This can make our code more readable and less error-prone, especially when we have functions with many parameters.
 
-
+# variable number of keyword arguments
 def my_function(**kwargs): # **kwargs allows us to pass a variable number of keyword arguments to the function. It collects all the keyword arguments passed to the function into a dictionary.
     print(f"Hello, my name is {kwargs['f_name']} {kwargs['l_name']} and I am {kwargs['age']} years old.")
 
